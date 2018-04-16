@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DoctorDashboardModule } from './doctor-dashboard/doctor-dashboard.module';
 
@@ -12,6 +12,7 @@ import { DoctorDashboardModule } from './doctor-dashboard/doctor-dashboard.modul
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     DoctorDashboardModule
   ],
   providers: [],
