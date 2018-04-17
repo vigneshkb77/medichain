@@ -1,3 +1,102 @@
-<p>
-  Feature module insert-data works!
-</p>
+
+<div class="pt-30">
+  <div>
+    <h1><span class="badge badge-secondary">Please Enter the Patient Details</span></h1>
+</div>
+<form>
+  <div class="form-group">
+    <label for="inputEmail4">Name</label>
+    <input type="text" class="form-control" id="inputEmail4" placeholder="name">
+  </div>
+  <div class="form-group">
+    <label for="inputPassword4">Age</label>
+    <input type="number" class="form-control" id="inputPassword4" placeholder="age">
+  </div>
+  <div class="form-group">
+    <label for="inputPassword4">Weight</label>
+    <input type="number" class="form-control" id="inputPassword4" placeholder="Weight">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Cholestrol level mg\dl</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option value="">Select</option>
+      <option *ngFor="let no of numbers" [value]="no">{{no}}</option>}
+    </select>
+  </div>
+  <div class="form-group">
+      <label for="exampleFormControlSelect1">Blood sugar level mg\dl</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option value="">Select</option>
+        <option *ngFor="let no of numbers" [value]="no">{{no}}</option>}
+      </select>
+    </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Smoking</legend>
+      <div class="col-sm-10">
+        <div class="row">
+            <div class="form-check col-sm-2">
+                <input class="form-check-input" type="radio" name="smoke" id="smoke" value="yes" checked>
+                <label class="form-check-label" for="smoke">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check col-sm-2">
+                <input class="form-check-input" type="radio" name="smoke" id="smoke" value="no">
+                <label class="form-check-label" for="smoke">
+                 No
+                </label>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Alchol consumption</legend>
+      <div class="col-sm-10">
+        <div class="row">
+            <div class="form-check col-sm-2">
+                <input class="form-check-input" type="radio" name="Alchol" id="Alchol" value="yes" checked>
+                <label class="form-check-label" for="Alchol">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check col-sm-2">
+                <input class="form-check-input" type="radio" name="Alchol" id="Alchol" value="no">
+                <label class="form-check-label" for="Alchol">
+                 No
+                </label>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Exercise</legend>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="form-check col-sm-2">
+            <input class="form-check-input" type="radio" name="Exercise" id="Exercise" value="yes" checked>
+            <label class="form-check-label" for="Exercise">
+              Yes
+            </label>
+          </div>
+          <div class="form-check col-sm-2">
+            <input class="form-check-input" type="radio" name="Exercise" id="Exercise" value="no">
+            <label class="form-check-label" for="Exercise">
+             No
+            </label>
+          </div></div>
+        
+      </div>
+    </div>
+  </fieldset>
+  <div>
+      <button type="submit" class="btn btn-secondary pull-right">Add data</button>
+  </div>
+</form>
+</div>
