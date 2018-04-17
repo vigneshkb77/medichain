@@ -10,6 +10,9 @@ const routes: Routes = [
   {
     path: 'doctor',
     loadChildren: 'app/doctor-dashboard/doctor-dashboard.module#DoctorDashboardModule'
+  },{
+    path: 'patient',
+    loadChildren: 'app/patient-dashboard/patient-dashboard.module#PatientDashboardModule'
   },
   {
     path: '',
