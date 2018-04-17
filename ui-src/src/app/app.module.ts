@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DoctorDashboardModule } from './doctor-dashboard/doctor-dashboard.module';
+import { AuthModuleModule } from './auth-module/auth-module.module';
+
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { DoctorDashboardModule } from './doctor-dashboard/doctor-dashboard.modul
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DoctorDashboardModule
+    DoctorDashboardModule,
+    AuthModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
